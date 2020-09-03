@@ -1,33 +1,23 @@
-# vue-component-template
+# time-line
 
-## 设置
+## 描述
 
-### package.json
+主要用于气象业务中,雷达图,色斑图,实况数据,格点预报等数据的展示
 
-修改name为你的组件名字
+## 使用方法
 
-```json
-{
-  "name": "组件名字"
-}
++ 安装
+```powershell
+    npm install show-time-line
 ```
++ 注册
 
-### 组件运行
-
-```js
-npm install
-npm run dev
+```javascript
+    import showTimeLine from "show-time-line"
+    vue.use(showTimeLine)
 ```
++ 使用
 
-### 组件打包发布
-
-```js
-npm run build
-npm publish
-```
-
-### demo
-
-```js
-npm run demo:dev
+```html
+    <TimeLine />
 ```
