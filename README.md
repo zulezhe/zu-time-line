@@ -1,23 +1,18 @@
-# time-line
+# w-time-line
 
-## 描述
+> A Vue.js project
 
-主要用于气象业务中,雷达图,色斑图,实况数据,格点预报等数据的展示
+## Build Setup
 
-## 使用方法
+``` bash
+# install dependencies
+npm install
 
-+ 安装
-```powershell
-    npm install show-time-line
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
 ```
-+ 注册
 
-```javascript
-    import showTimeLine from "show-time-line"
-    vue.use(showTimeLine)
-```
-+ 使用
-
-```html
-    <TimeLine />
-```
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
