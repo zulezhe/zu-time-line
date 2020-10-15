@@ -10,8 +10,7 @@
 
 		<section class="snippets">
 			<Collapse>
-				<div class="section-content">
-					<CodeSnippet class="snippet" :code="componentSnippet" lang="html" />
+				<div class="section-content"><CodeSnippet class="snippet" :code="componentSnippet" lang="html" />
 					<div class="plus">+</div>
 				</div>
 			</Collapse>
