@@ -1,45 +1,67 @@
 {
-  "name": "w-time-line",
-  "description": "气象雷达 时间轴",
-  "version": "1.0.0",
-  "author": "Oliver <wang59651@163.com>",
-  "license": "MIT",
-  "private": false,
-  "main": "dist/w-time-line.min.js",
-  "keywords": [
-    "timeLine"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wangchaoxu/w-time-line"
-  },
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
-  },
-  "dependencies": {
-    "element-ui": "^2.13.2",
-    "vue": "^2.5.11"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-component": "^1.1.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
-    "less": "^3.12.2",
-    "less-loader": "4.1.0",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
-  }
+	"name": "w-time-line",
+	"version": "0.1.7",
+	"private": false,
+	"description": "特殊业务下的时间轴组件,常用于气象系统雷达网格数据等地方",
+	"author": "wangchaoxu",
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"lint": "vue-cli-service lint",
+		"lib": "vue-cli-service build --target lib --name time-line --dest lib packages/index.js"
+	},
+	"main": "lib/time-line.umd.js",
+	"unpkg": "lib/time-line.umd.min.js",
+	"dependencies": {
+		"core-js": "^3.6.5",
+		"screenfull": "^5.0.2",
+		"vue": "^2.6.11",
+		"vue-router": "^3.4.6"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "~4.5.0",
+		"@vue/cli-plugin-eslint": "~4.5.0",
+		"@vue/cli-service": "~4.5.0",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^6.7.2",
+		"eslint-plugin-vue": "^6.2.2",
+		"less": "^3.12.2",
+		"less-loader": "^7.0.2",
+		"vue-template-compiler": "^2.6.11"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"plugin:vue/essential",
+			"eslint:recommended"
+		],
+		"parserOptions": {
+			"parser": "babel-eslint"
+		},
+		"rules": {}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not dead"
+	],
+	"bugs": {
+		"url": "https://github.com/wangchaoxu/w-time-line/issues"
+	},
+	"homepage": "https://github.com/wangchaoxu/w-time-line",
+	"keywords": [
+		"vue",
+		"vuejs",
+		"timeLine",
+		"time-line",
+		"w-time-line"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wangchaoxu/w-time-line.git"
+	}
 }
