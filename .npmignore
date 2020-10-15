@@ -1,23 +1,11 @@
-.github/
-build/
-docs/
-demo-src/
-node_modules/
+# 忽略目录
+examples/
+packages/
 public/
-tests/
+node_modules/
 
-.editorconfig
-.eslintignore
-.eslintrc.js
-.gitignore
-.npmignore
-.babelrc
-babel.config.js
-jest.config.js
-package-lock.json
+# 忽略指定文件
 vue.config.js
+babel.config.js
+*.map
 
-.git/
-.vscode/
-nginx/
-*.log

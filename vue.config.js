@@ -1,43 +1,33 @@
-const path = require('path')
-
 module.exports = {
-  lintOnSave: false,
+	publicPath: process.env.NODE_ENV === 'production' ? './' : './',
 
-  outputDir: './docs',
-  publicPath: './',
+	devServer: {
+		host: '0.0.0.0',
+		open: true,
+		hot: true,
+		port: 4000,
+	},
 
-  configureWebpack: {
-    entry: {
-      app: path.resolve(__dirname, './docs-src/main.js')
-    },
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, './docs-src')
-      }
-    }
-  },
+	// 修改 src 为 examples
+	pages: {
+		index: {
+			entry: 'examples/main.js',
+			template: 'public/index.html',
+			filename: 'index.html',
+		},
+	},
 
-  chainWebpack: config => {
-    config.module
-      .rule('js')
-      .include
-      .add(path.resolve(__dirname, './docs-src'))
-
-    config.module
-      .rule('vue')
-      .use('vue-loader')
-      .loader('vue-loader')
-      .tap(options => {
-        options.compilerOptions.preserveWhitespace = true
-        return options
-      })
-  },
-
-  css: {
-    loaderOptions: {
-      sass: {
-        prependData: `@import "~@/style/imports.scss";`
-      }
-    }
-  }
-}
+	// 扩展 webpack 配置，使 packages 加入编译
+	chainWebpack: (config) => {
+		config.module
+			.rule('js')
+			.include.add('/packages')
+			.end()
+			.use('babel')
+			.loader('babel-loader')
+			.tap((options) => {
+				// 修改它的选项...
+				return options;
+			});
+	},
+};
