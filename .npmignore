@@ -3,6 +3,7 @@ examples/
 packages/
 public/
 node_modules/
+doc/
 
 # 忽略指定文件
 vue.config.js

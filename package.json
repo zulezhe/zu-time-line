@@ -1,6 +1,6 @@
 {
 	"name": "w-time-line",
-	"version": "0.1.7",
+	"version": "0.1.9",
 	"private": false,
 	"description": "特殊业务下的时间轴组件,常用于气象系统雷达网格数据等地方",
 	"author": "wangchaoxu",

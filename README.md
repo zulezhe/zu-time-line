@@ -1,5 +1,9 @@
 # w-time-line
 
+## 演示
+
+[demo](https://wangchaoxu.github.io/w-time-line/#/)
+
 ## 安装
 
 ```
