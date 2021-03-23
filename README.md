@@ -2,7 +2,7 @@
 
 ## 演示
 
-[demo](https://wangyoujin1.github.io/w-time-line/#/)
+[demo](https://wangchaoxu.github.io/w-time-line/#/)
 
 ## 安装
 
