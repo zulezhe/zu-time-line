@@ -7,7 +7,7 @@
 ## 安装
 
 ```
-yarn add w-time-line
+yarn add zu-time-line
 ```
 
 ## 使用
@@ -15,8 +15,8 @@ yarn add w-time-line
 ```js
   // main.js引入
   import Vue from 'vue';
-  import wTimeLine 'w-time-line'
-  Vue.use(wTimeLine)
+  import TimeLine 'zu-time-line'
+  Vue.use(TimeLine)
 ```
 
 ```html

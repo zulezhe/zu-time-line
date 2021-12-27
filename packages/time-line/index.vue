@@ -1,8 +1,8 @@
 <!--
- * @Author: wangchaoxu
+ * @Author: zulezhe
  * @Date: 2020-06-04 10:41:23
- * @LastEditors: wangchaoxu
- * @LastEditTime: 2020-10-15 09:43:16
+ * @LastEditors: zulezhe
+ * @LastEditTime: 2021-12-27 10:14:56
  * @Description:
 -->
 <template>
@@ -41,7 +41,7 @@
 <script>
 import { timeFormat, timeRange, findNearByArr } from "./common";
 export default {
-  name: "wTimeLine",
+  name: "TimeLine",
   components: {},
   props: {
     btime: {
